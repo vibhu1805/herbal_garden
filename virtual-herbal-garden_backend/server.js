@@ -106,17 +106,16 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 */
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const plantRoutes = require('./routes/plantRoutes'); // Path to your route file
+const plantRoutes = require('./routes/plantRoutes');
 const userRoutes = require('./routes/userRoutes');
 const bookmarkRoutes = require('./routes/bookmarkRoutes');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 const dotenv = require('dotenv');
-const authRoutes = require('./routes/Auth'); // Ensure this path is correct
+const authRoutes = require('./routes/Auth');
 
 dotenv.config();
 
@@ -124,12 +123,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 3000,
-      credentials: true,                // Allow credentials (cookies or authentication)
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  credentials: true,
 }));
-app.options('*', cors());
-app.use(bodyParser.json());
+app.options('*', cors()); // Allow preflight requests
 
+app.use(bodyParser.json());
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
@@ -140,7 +139,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log('MongoDB connection error:', err));
 
 // Register routes
-app.use('/api/auth', authRoutes); // Ensure this matches your route setup
+app.use('/api/auth', authRoutes);
 app.use('/api/plants', plantRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/bookmarks', bookmarkRoutes);
@@ -155,4 +154,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
