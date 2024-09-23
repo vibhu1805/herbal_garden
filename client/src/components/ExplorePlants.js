@@ -161,7 +161,7 @@ const ExplorePlants = () => {
   useEffect(() => {
     const fetchPlants = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/plants');
+        const response = await fetch('http://herbal-garden.onrender.com/api/plants');
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         
         const data = await response.json();
