@@ -127,7 +127,7 @@ app.use(cors({
   origin: process.env.FRONTEND_URL || 3000,
       credentials: true,                // Allow credentials (cookies or authentication)
 }));
-
+app.options('*', cors());
 app.use(bodyParser.json());
 
 
