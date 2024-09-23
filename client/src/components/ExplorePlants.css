@@ -1,0 +1,107 @@
+/* ExplorePlants.css */
+
+/* Container for the entire Explore Plants page */
+.explore-plants-container {
+  padding: 120px;
+  text-align: center;
+}
+
+/* Heading */
+.explore-heading {
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  color: #2E7D32; /* Dark Green */
+  margin-bottom: 30px;
+}
+
+/* Search and Filters Box */
+.search-filters-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-bars input {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #2E7D32; /* Dark Green border */
+  border-radius: 5px;
+  background-color: transparent; /* No background */
+}
+
+/* Filters */
+.filters select {
+  padding: 10px;
+  border: 1px solid #2E7D32; /* Dark Green border */
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Search Button */
+.search-buttons {
+  background-color: #2E7D32; /* Dark Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Plant Grid */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr); /* Responsive grid */
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 47px;
+}
+
+/* Plant Card */
+.plants-card {
+ background-color: #ffffff; /* White background for cards */
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plants-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.plants-card img {
+ width: 100%;
+  height: 200px; /* Ensure images have a consistent height */
+  object-fit: cover; /* Ensures the image covers the card area */
+  border-radius: 40px;
+}
+
+.plants-card h2 {
+  font-size: 20px;
+  color: #2E7D32; /* Dark Green */
+}
+
+.plants-card p {
+  color: #8D6E63; /* Light Brown */
+}
+
+.learn-more-btn {
+  background-color: #2e7d32; /* Dark Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn:hover {
+  background-color: #66BB6A; /* Lighter Green */
+}

@@ -1,0 +1,112 @@
+/* src/styles/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Langar&display=swap');
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  background-color: #2E7D32; /* Dark Green */
+  color: #fff;
+  align-items: center;
+}
+
+.footer .left {
+  width: 30%;
+}
+
+.footer .left img {
+  height: 50px;
+}
+
+.footer .center {
+  width: 30%;
+}
+
+.footer .center h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer .center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .center ul li {
+  margin-bottom: 10px;
+}
+
+.footer .right {
+  width: 30%;
+}
+
+.footer .right input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.footer .right button {
+  padding: 10px 20px;
+  background-color: #66BB6A;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .right button:hover {
+  background-color: #4CAF50;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Aligns the company info and quick links */
+  align-items: flex-start; /* Aligns items at the top */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-info {
+  text-align: left; /* Aligns text to the left */
+  width: 70%; /* Allocates half the width for company info */
+}
+
+.company-name {
+  font-family: 'Jacques Francois Shadow', serif; /* Font for Company Name */
+  font-size: 3rem;
+  
+}
+
+.company-description {
+  font-family: 'Langar', cursive; /* Font for Company Description */
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #f5f5dc; /* Light Beige Description */
+  margin-left:15%;
+  margin-right: 25%;
+}
+
+.company-logo .logo{
+    margin-left: 25%;
+    margin-top: 5%;
+      max-width: 500px;
+    max-height: 500px;
+}
+
+
+
+.footer .social-icons {
+  margin-top: 20px;
+}
+
+.footer .social-icons i {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer .social-icons i:hover {
+  color: #A5D6A7; /* Light Green */
+}

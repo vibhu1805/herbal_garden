@@ -1,0 +1,57 @@
+/* NavigationBar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F5F5DC; /* Light Beige */
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+
+}
+
+.menu-items li {
+  list-style: none;
+  font-size: 18px;
+  color: #2E7D32; /* Dark Green */
+  cursor: pointer;
+}
+
+.menu-items li:hover {
+  color: #A5D6A7; /* Light Green */
+}
+/* Default link style */
+a {
+  text-decoration: none;
+  color: #2E7D32; /* Dark Green (matching your website's primary color) */
+}
+
+/* On hover */
+a:hover {
+  color: #66BB6A; /* Light green */
+}
+
+/* Active state (when link is clicked) */
+a:active {
+  color: #4CAF50; /* You can choose a color that matches your theme */
+}
+
+/* Visited link (after clicking) */
+a:visited {
+  color: #2E7D32; /* Keep the same color as default to avoid the blue */
+}
+
+.search-icon i {
+  font-size: 20px;
+  color: #2E7D32;
+}

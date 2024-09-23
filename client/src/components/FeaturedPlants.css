@@ -1,0 +1,58 @@
+.featured-plants-section {
+  background-color: #f5f5dc; /* Light Beige to match the UI */
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 40px; /* Beige background */
+}
+
+.featured-heading {
+  color: #2e7d32; /* Dark Green for the title */
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 47px;
+}
+
+.plant-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plant-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.plant-image {
+  width: 100%;
+  height: 200px; /* Ensure images have a consistent height */
+  object-fit: cover; /* Ensures the image covers the card area */
+  border-radius: 40px;
+}
+
+.plant-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.plant-name {
+  font-size: 24px;
+  color: #2E7D32; /* Dark Green */
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+}
+
+.plant-use {
+  font-size: 16px;
+  color: #8D6E63; /* Light Brown */
+}

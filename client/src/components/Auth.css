@@ -1,0 +1,80 @@
+/* Global Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5dc; /* Light Beige background */
+}
+
+.auth-card {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-title {
+  font-family: 'Jacques Francois Shadow', serif;
+  color: #2e7d32; /* Dark Green */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  font-family: 'Langar', cursive;
+  color: #8d6e63; /* Light Brown */
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.auth-card input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #c8e6c9; /* Light Green border */
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-card input:focus {
+  border-color: #4caf50; /* Highlight border on focus */
+}
+
+.auth-button {
+  background-color: #2e7d32; /* Dark Green */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #66bb6a; /* Lighter Green on hover */
+}
+
+.auth-switch {
+  margin-top: 20px;
+}
+
+.auth-switch a {
+  color: #2e7d32; /* Dark Green */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-switch a:hover {
+  color: #4caf50; /* Slightly lighter green on hover */
+}

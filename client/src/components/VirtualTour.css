@@ -1,0 +1,75 @@
+.virtual-tour-section {
+  background-color: #f5f5dc; /* Light Beige to match the UI */
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.virtual-tour-heading {
+  color: #2e7d32; /* Dark Green for the title */
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns for desktop */ /* Responsive grid */
+  gap: 20px;
+  padding: 0 20px;
+  margin-top: 47px;
+}
+
+.tour-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 40px;
+}
+
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Lifting effect on hover */
+}
+
+.tour-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the card */
+  border-radius: 40px;
+}
+
+.tour-details {
+  padding: 20px;
+}
+
+.tour-use {
+  font-size: 1.5rem;
+  color: #2e7d32; /* Dark Green for the plant use */
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.tour-description {
+  font-size: 1rem;
+  color: #8d6e63; /* Light Brown for the description */
+  margin-bottom: 20px;
+}
+
+.start-tour-button {
+  background-color: #2e7d32; /* Dark Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+}
+
+.start-tour-button:hover {
+  background-color: #66bb6a; /* Lighter Green on hover */
+}

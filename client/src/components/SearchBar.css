@@ -1,0 +1,145 @@
+/* src/styles/SearchBar.css */
+.search-bar {
+  width: 100%;
+ 
+ margin: 20px 0;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #E0E0E0; /* Light Green */
+  border-radius: 40px; /* Rounded box */
+  padding: 10px;
+  position: relative;
+  height: 70px;
+}
+
+.img {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #8D6E63; /* Light Brown */
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-style: italic;
+  color: #2E7D32; /* Dark Green */
+  outline: none;
+}
+.search-bar-container input:hover{
+  color: #66bb6a;
+}
+.search-bar-container ::placeholder{
+  color:#8D6E63;
+  font-family: cursive;
+  font-style:italic ;
+}
+
+.search-bar select {
+  width: 12%;
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.medicinal-use {
+  background-color: #e8f5e9; /* Light Green */
+  color:#8D6E63;
+}
+.region,
+.type {
+  background-color: #f5f5dc; /* Light Brown */
+  color:#8d6e63; /* Text color for better contrast */
+}
+
+.search-bar select:hover {
+  background-color: #C8e6C9; /* Darker Light Green on hover for medicinal use */
+}
+
+/* Leaf Icon for Plant Type */
+.plant-type-container {
+  display: flex;
+  align-items: center;
+   justify-content: center;
+  width: 12%;
+  background-color: #8D6E63; /* Light Brown */
+  border-radius: 20px;
+  padding: 10px;
+  position: relative; /* To handle the dropdown position */
+  
+}
+
+.leaf {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.search-button {
+  background-color: #2E7D32; 
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #66bb6a;
+}
+
+/* Responsive Behavior */
+@media screen and (max-width: 768px) {
+  .search-bar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+    height: auto;
+  }
+}
+.plant-type-container select {
+  position: relative;
+  z-index: 10; /* Ensure dropdown stays on top of other elements */
+  transform-origin: top; /* Force dropdown to expand downward */
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar-container {
+    flex-direction: column;
+  }
+
+  .search-bar select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
