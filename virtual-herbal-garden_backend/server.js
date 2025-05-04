@@ -145,6 +145,9 @@ app.use('/api/users', userRoutes);
 app.use('/api/bookmarks', bookmarkRoutes);
 app.use(notFound);
 app.use(errorHandler);
+app.get('/', (req, res) => {
+  res.send({ message: 'API is running...' });
+});
 
 app.use((req, res) => {
   res.status(404).json({ message: `Not Found - ${req.originalUrl}` });
